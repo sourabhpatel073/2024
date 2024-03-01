@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Apprarisals() {
+function Appraisal() {
   return (
     <div>
       Apprarisals
@@ -8,4 +8,4 @@ function Apprarisals() {
   )
 }
 
-export default Apprarisals
+export default Appraisal

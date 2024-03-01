@@ -1,11 +1,11 @@
 import React from 'react'
 
-function AppSetup() {
+function SignIn() {
   return (
     <div>
-      appsetup
+      SignIn
     </div>
   )
 }
 
-export default AppSetup
+export default SignIn
