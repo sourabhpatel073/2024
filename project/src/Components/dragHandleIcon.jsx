@@ -21,6 +21,7 @@ const DragHandleIcon1 = () => (
     <circle cx="18" cy="5" r="1"></circle>
     <circle cx="18" cy="12" r="1"></circle>
     <circle cx="18" cy="19" r="1"></circle>
+    <circle cx="18" cy="19" r="1"></circle>
   </svg>
 );
 
