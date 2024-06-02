@@ -3,7 +3,8 @@ import React from 'react'
 function AboutUs() {
   return (
     <div>
-      AboutUs
+      AboutUs 
+      this is the dummy code 
     </div>
   )
 }
