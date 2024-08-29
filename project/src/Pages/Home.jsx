@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 
 
 function Home() {
-  let Icons = [{ title: "MyFiles" ,path:"/myfiles","src":"./Assests/myfiles.png" },{ title: "Expenses" ,path:"/expense","src":"./Assests/expense.jpg" }];
+  let Icons = [{ title: "MyFiles" ,path:"/myfiles","src":"./Assests/myfiles.png" },{ title: "Expenses" ,path:"/expense","src":"./Assests/expense.jpg" },{ title: "MyFiles" ,path:"/myfiles","src":"./Assests/myfiles.png" },{ title: "Expenses" ,path:"/expense","src":"./Assests/expense.jpg" }];
 
   return (
-    <Box>
+    <Box display={'flex'} flexDirection={'row'} justifyContent={'space-around'}>
       {Icons.map((item, index) => {
         return <Box key={index}>
         <Link to={`${item.path}`}>
