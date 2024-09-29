@@ -8,6 +8,7 @@ function Home() {
 
   return (
     <Box display={'flex'} flexDirection={'row'} justifyContent={'space-around'}>
+    {/* home section */}
       {Icons.map((item, index) => {
         return <Box key={index}>
         <Link to={`${item.path}`}>
