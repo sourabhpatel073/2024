@@ -7,7 +7,7 @@ function Home() {
   let Icons = [{ title: "MyFiles" ,path:"/myfiles","src":"./Assests/myfiles.png" },{ title: "Expenses" ,path:"/expense","src":"./Assests/expense.jpg" },{ title: "MyFiles" ,path:"/myfiles","src":"./Assests/myfiles.png" },{ title: "Expenses" ,path:"/expense","src":"./Assests/expense.jpg" }];
 
   return (
-    <Box display={'flex'} flexDirection={'row'} justifyContent={'space-around'}>
+    <Box display={'flex'} flexDirection={'row'} justifyContent={'space-around'} >
     {/* home section */}
       {Icons.map((item, index) => {
         return <Box key={index}>

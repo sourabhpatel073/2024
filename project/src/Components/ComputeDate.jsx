@@ -9,6 +9,7 @@ const formattedDate = date.toLocaleDateString("en-US", {
   day: "numeric"
 });
 
+
 const formattedTime = date.toLocaleTimeString("en-US", {
   hour: "numeric",
   minute: "numeric",
