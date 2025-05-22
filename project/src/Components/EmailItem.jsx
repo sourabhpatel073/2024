@@ -17,8 +17,6 @@ import { AiOutlineDelete } from "react-icons/ai";
 import { DeleteIcon, EmailIcon, StarIcon } from "@chakra-ui/icons";
 import ArchiveIcon from "./ArchiveIcon";
 import { Link } from 'react-router-dom';
-
-
 const EmailItem = ({ email, onStar, onSelect, onArchive, onDelete }) => {
   console.log("email",email)
   const handleStarClick = (e) => {
@@ -54,14 +52,12 @@ const EmailItem = ({ email, onStar, onSelect, onArchive, onDelete }) => {
       cursor="pointer"
       _hover={{ bg: "gray.50" }}
       onClick={handleSelectClick}
-      border={"1px solid black"}
-    >
+      border={"1px solid black"} >
     <Link to={`/emails/${email.attributes.envelope.messageId}`}>
       <Flex
         direction={{ base: "column", md: "row" }} // Stack on mobile, row on other screens
         justify="space-around"
-        align="center"
-      >
+        align="center" >
         <Flex align="center" flex="1">
           <Tooltip label="Select" aria-label="Star" mr={{ base: 0, md: 10 }}>
             <Checkbox
@@ -93,8 +89,7 @@ const EmailItem = ({ email, onStar, onSelect, onArchive, onDelete }) => {
             fontWeight="medium"
             color="gray.600"
             mr={{ base: 0, md: 10 }}
-            mb={{ base: 2, md: 0 }} // Add margin bottom only on mobile
-          >
+            mb={{ base: 2, md: 0 }} // Add margin bottom only on mobile  >
              {truncateText(email.attributes.envelope.subject, 20)}
           </Text>
           <Text
