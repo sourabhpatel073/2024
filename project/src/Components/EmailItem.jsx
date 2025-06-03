@@ -43,6 +43,10 @@ const EmailItem = ({ email, onStar, onSelect, onArchive, onDelete }) => {
     return text.slice(0, maxLength) + '...';
   };
 
+  useEffect(()=>{
+    fetchData()
+  },[])
+
   return (
     <Box
       p={4}
